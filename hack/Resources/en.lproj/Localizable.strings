@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  hack
+
+  Created by Артём Поляничев on 02.12.2021.
+  
+*/
+
+ApplicationsList.title = "Список заявок";
+ReviewView.interesting = "Хочется реализовать";
