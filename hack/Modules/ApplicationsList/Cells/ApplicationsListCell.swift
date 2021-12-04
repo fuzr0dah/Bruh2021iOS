@@ -18,7 +18,7 @@ final class ApplicationsListCell: UICollectionViewCell {
         let containerShadowOpacity: Float = 0.1
         let containerShadowRadius: CGFloat = 5.0
         let containerCornerRadius: CGFloat = 8.0
-        let containerInsets = UIEdgeInsets(top: 8.0, left: 16.0, bottom: 8.0, right: 16.0)
+        let containerInsets = UIEdgeInsets(top: 4.0, left: 16.0, bottom: 4.0, right: 16.0)
     }
 
     // MARK: - Properties

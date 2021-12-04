@@ -1,14 +1,26 @@
 [
     {
-        "id": "UUID-SVBG",
+        "id": "UUID-SVRG",
         "name": "Летающий транспорт",
         "desc": "Ну он типа врум врум и летит",
         "imageName": "flyingCar"
     },
     {
-        "id": "UUID-SVBG",
+        "id": "UUID-KHBG",
         "name": "Супер дорога",
         "desc": "Она просто супер пупер, реально крутая",
+        "imageName": "superRoad"
+    },
+    {
+        "id": "UUID-LOER",
+        "name": "Реактивный ранец",
+        "desc": "Летаешь как железный человек",
+        "imageName": "jetpack"
+    },
+    {
+        "id": "UUID-ZXPR",
+        "name": "Десятиполосная дорога",
+        "desc": "Очень широкая дорога",
         "imageName": ""
     }
 ]

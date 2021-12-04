@@ -8,3 +8,4 @@
 
 ApplicationsList.title = "Список заявок";
 ReviewView.interesting = "Хочется реализовать";
+Tabbar.aspplications = "Заявки";

@@ -17,9 +17,19 @@ final class ApplicationsListViewController: BaseViewController {
     private lazy var collectionView: UICollectionView = {
         let view = UICollectionView(frame: .zero, collectionViewLayout: obtainCollectionViewLayout())
         view.backgroundColor = Colors.white.color
+        view.contentInset = .init(top: .zero, left: .zero, bottom: 16.0, right: .zero)
         view.register(ApplicationsListCell.self,
                       forCellWithReuseIdentifier: ApplicationsListPresenter.Constants.listCellIdentifier.rawValue)
         return view
+    }()
+    
+    private lazy var filterBarButton: UIBarButtonItem = {
+        let button = UIBarButtonItem(image: UIImage(named: "filter"),
+                                     style: .plain,
+                                     target: self,
+                                     action: #selector(filterBarButtonTapped))
+        button.tintColor = Colors.black.color
+        return button
     }()
     
     // MARK: - Lifecycle
@@ -38,6 +48,7 @@ final class ApplicationsListViewController: BaseViewController {
     override func configureNavigationBar() {
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationItem.title = Text.ApplicationsList.title
+        navigationItem.rightBarButtonItem = filterBarButton
     }
     
     override func configureView() {
@@ -66,6 +77,12 @@ final class ApplicationsListViewController: BaseViewController {
         
         return UICollectionViewCompositionalLayout(section: section)
     }
+    
+    // MARK: - Actions
+    
+    @objc private func filterBarButtonTapped() {
+        output?.showFilters()
+    }
 }
 
 // MARK: - ApplicationsListViewInput
@@ -73,5 +90,13 @@ final class ApplicationsListViewController: BaseViewController {
 extension ApplicationsListViewController: ApplicationsListViewInput {
     func getCollectionView() -> UICollectionView {
         return collectionView
+    }
+}
+
+// MARK: - ApplicationListTransitionable
+
+extension ApplicationsListViewController: ApplicationListTransitionable {
+    func presentFilters(_ vc: ApplicationsFilterViewController) {
+        present(vc, animated: true)
     }
 }

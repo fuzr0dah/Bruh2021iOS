@@ -79,3 +79,28 @@ identifier_name:
       - id
       - vc
       - i
+
+attributes:
+  severity: error
+  always_on_same_line:
+    - '@IBAction'
+    - '@IBOutlet'
+    - '@IBDesignable'
+    - '@IBInspectable'
+    - '@GKInspectable'
+    - '@NSCopying'
+    - '@NSManaged'
+    - '@dynamic'
+    - '@inlinable'
+    - '@nonobjc'
+    - '@objc'
+  always_on_line_above:
+    - '@dynamicMemberLookup'
+    - '@objcMembers'
+    - '@UIApplicationMain'
+    - '@NSApplicationMain'
+    - '@available'
+    - '@convention'
+    - '@discardableResult'
+    - '@usableFromInline'
+    - '@warn_unqualified_access'

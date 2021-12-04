@@ -25,6 +25,7 @@ protocol ApplicationsListViewInput: AnyObject {
 
 protocol ApplicationsListViewOutput: AnyObject {
     func reloadCollectionView()
+    func showFilters()
 }
 
 final class ApplicationsListPresenter: ApplicationsListViewOutput {
@@ -38,6 +39,7 @@ final class ApplicationsListPresenter: ApplicationsListViewOutput {
     // MARK: - Properties
     
     weak var view: ApplicationsListViewInput?
+    var router: ApplicationListRouterInput?
     
     private var applications = Bundle.main.decode([Application].self, from: "Applications.json")
     private lazy var datasource = makeDataSource()
@@ -49,6 +51,10 @@ final class ApplicationsListPresenter: ApplicationsListViewOutput {
         snapshot.appendSections([.main])
         snapshot.appendItems(applications)
         datasource.apply(snapshot)
+    }
+    
+    func showFilters() {
+        router?.routeToFilters()
     }
 
     // MARK: - DataSource

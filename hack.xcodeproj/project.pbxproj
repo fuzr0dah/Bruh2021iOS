@@ -31,6 +31,17 @@
 		F472B9A2275A01AF00CE6DA1 /* Bundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F472B9A1275A01AF00CE6DA1 /* Bundle+Extensions.swift */; };
 		F472B9A4275A02A000CE6DA1 /* Applications.json in Resources */ = {isa = PBXBuildFile; fileRef = F472B9A3275A02A000CE6DA1 /* Applications.json */; };
 		F49AAB7C275A11140005F9F0 /* ReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49AAB7B275A11140005F9F0 /* ReviewView.swift */; };
+		F4CA3158275A965A00AAF868 /* ApplicationListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA3157275A965A00AAF868 /* ApplicationListRouter.swift */; };
+		F4CA315B275A97BC00AAF868 /* ApplicationsFilterAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA315A275A97BC00AAF868 /* ApplicationsFilterAssembly.swift */; };
+		F4CA315D275A97ED00AAF868 /* ApplicationsFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA315C275A97ED00AAF868 /* ApplicationsFilterViewController.swift */; };
+		F4DDBB14275B1119009B3182 /* TabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DDBB13275B1119009B3182 /* TabbarViewController.swift */; };
+		F4DDBB17275B11CB009B3182 /* Tabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DDBB16275B11CB009B3182 /* Tabbar.swift */; };
+		F4DDBB19275B12B2009B3182 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4DDBB18275B12B2009B3182 /* Login.storyboard */; };
+		F4DDBB1B275B12C7009B3182 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DDBB1A275B12C7009B3182 /* LoginViewController.swift */; };
+		F4DDBB1D275B13A4009B3182 /* MainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DDBB1C275B13A4009B3182 /* MainButton.swift */; };
+		F4DDBB20275B147A009B3182 /* LoginAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DDBB1F275B147A009B3182 /* LoginAssembly.swift */; };
+		F4DDBB23275B16F1009B3182 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DDBB22275B16F1009B3182 /* ProfileView.swift */; };
+		F4DDBB26275B1DF8009B3182 /* ProfileAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DDBB25275B1DF8009B3182 /* ProfileAssembly.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +70,17 @@
 		F472B9A1275A01AF00CE6DA1 /* Bundle+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extensions.swift"; sourceTree = "<group>"; };
 		F472B9A3275A02A000CE6DA1 /* Applications.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Applications.json; sourceTree = "<group>"; };
 		F49AAB7B275A11140005F9F0 /* ReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewView.swift; sourceTree = "<group>"; };
+		F4CA3157275A965A00AAF868 /* ApplicationListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationListRouter.swift; sourceTree = "<group>"; };
+		F4CA315A275A97BC00AAF868 /* ApplicationsFilterAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationsFilterAssembly.swift; sourceTree = "<group>"; };
+		F4CA315C275A97ED00AAF868 /* ApplicationsFilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationsFilterViewController.swift; sourceTree = "<group>"; };
+		F4DDBB13275B1119009B3182 /* TabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarViewController.swift; sourceTree = "<group>"; };
+		F4DDBB16275B11CB009B3182 /* Tabbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabbar.swift; sourceTree = "<group>"; };
+		F4DDBB18275B12B2009B3182 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		F4DDBB1A275B12C7009B3182 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F4DDBB1C275B13A4009B3182 /* MainButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButton.swift; sourceTree = "<group>"; };
+		F4DDBB1F275B147A009B3182 /* LoginAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAssembly.swift; sourceTree = "<group>"; };
+		F4DDBB22275B16F1009B3182 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		F4DDBB25275B1DF8009B3182 /* ProfileAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileAssembly.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,9 +144,12 @@
 		F4404F9D2759485600DF69EC /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				F4DDBB21275B168C009B3182 /* Profile */,
+				F4DDBB12275B101A009B3182 /* Tabbar */,
+				F4DDBB11275B1013009B3182 /* Login */,
 				F4404F9E2759487E00DF69EC /* ApplicationsList */,
 				F4404F9F275948C400DF69EC /* ApplicationDetail */,
-				F4404FA02759496300DF69EC /* ApplicationFilter */,
+				F4404FA02759496300DF69EC /* ApplicationsFilter */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -135,6 +160,7 @@
 				F4404FA627594A1C00DF69EC /* Cells */,
 				F4404FA3275949A600DF69EC /* ApplicationsListViewController.swift */,
 				F4404FC82759506500DF69EC /* ApplicationsListPresenter.swift */,
+				F4CA3157275A965A00AAF868 /* ApplicationListRouter.swift */,
 			);
 			path = ApplicationsList;
 			sourceTree = "<group>";
@@ -147,11 +173,12 @@
 			path = ApplicationDetail;
 			sourceTree = "<group>";
 		};
-		F4404FA02759496300DF69EC /* ApplicationFilter */ = {
+		F4404FA02759496300DF69EC /* ApplicationsFilter */ = {
 			isa = PBXGroup;
 			children = (
+				F4CA315C275A97ED00AAF868 /* ApplicationsFilterViewController.swift */,
 			);
-			path = ApplicationFilter;
+			path = ApplicationsFilter;
 			sourceTree = "<group>";
 		};
 		F4404FA22759497B00DF69EC /* Models */ = {
@@ -165,7 +192,11 @@
 		F4404FA527594A0500DF69EC /* Assemblies */ = {
 			isa = PBXGroup;
 			children = (
+				F4DDBB24275B1DDB009B3182 /* Profile */,
+				F4DDBB1E275B1468009B3182 /* Login */,
+				F4DDBB15275B11BF009B3182 /* Tabbar */,
 				F4404FD227595D2400DF69EC /* ApplicationsList */,
+				F4CA3159275A97AD00AAF868 /* ApplicationsFilter */,
 				F4404FD327595D4100DF69EC /* ApplicationDetail */,
 				F4404FCE2759562100DF69EC /* Assembly.swift */,
 			);
@@ -228,8 +259,66 @@
 			isa = PBXGroup;
 			children = (
 				F49AAB7B275A11140005F9F0 /* ReviewView.swift */,
+				F4DDBB1C275B13A4009B3182 /* MainButton.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		F4CA3159275A97AD00AAF868 /* ApplicationsFilter */ = {
+			isa = PBXGroup;
+			children = (
+				F4CA315A275A97BC00AAF868 /* ApplicationsFilterAssembly.swift */,
+			);
+			path = ApplicationsFilter;
+			sourceTree = "<group>";
+		};
+		F4DDBB11275B1013009B3182 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				F4DDBB18275B12B2009B3182 /* Login.storyboard */,
+				F4DDBB1A275B12C7009B3182 /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		F4DDBB12275B101A009B3182 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				F4DDBB13275B1119009B3182 /* TabbarViewController.swift */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		F4DDBB15275B11BF009B3182 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				F4DDBB16275B11CB009B3182 /* Tabbar.swift */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		F4DDBB1E275B1468009B3182 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				F4DDBB1F275B147A009B3182 /* LoginAssembly.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		F4DDBB21275B168C009B3182 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				F4DDBB22275B16F1009B3182 /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		F4DDBB24275B1DDB009B3182 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				F4DDBB25275B1DF8009B3182 /* ProfileAssembly.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,6 +388,7 @@
 			files = (
 				F472B9A4275A02A000CE6DA1 /* Applications.json in Resources */,
 				F4404FBB27594CE300DF69EC /* Localizable.strings in Resources */,
+				F4DDBB19275B12B2009B3182 /* Login.storyboard in Resources */,
 				F4404F952759478A00DF69EC /* LaunchScreen.storyboard in Resources */,
 				F4404FB827594C5900DF69EC /* Colors.xcassets in Resources */,
 				F4404F922759478A00DF69EC /* Assets.xcassets in Resources */,
@@ -354,19 +444,29 @@
 			files = (
 				F4404FCB275950FD00DF69EC /* Application.swift in Sources */,
 				F4404FA927594A3800DF69EC /* ApplicationsListCell.swift in Sources */,
+				F4DDBB14275B1119009B3182 /* TabbarViewController.swift in Sources */,
+				F4DDBB1B275B12C7009B3182 /* LoginViewController.swift in Sources */,
+				F4DDBB17275B11CB009B3182 /* Tabbar.swift in Sources */,
 				F4404FC427594D2F00DF69EC /* Assets.swift in Sources */,
+				F4DDBB20275B147A009B3182 /* LoginAssembly.swift in Sources */,
 				F4404FC92759506500DF69EC /* ApplicationsListPresenter.swift in Sources */,
+				F4CA315B275A97BC00AAF868 /* ApplicationsFilterAssembly.swift in Sources */,
 				F4404FC227594D2F00DF69EC /* Colors.swift in Sources */,
 				F4404FB227594B2000DF69EC /* BaseViewController.swift in Sources */,
 				F4404F892759478900DF69EC /* AppDelegate.swift in Sources */,
 				F472B9A2275A01AF00CE6DA1 /* Bundle+Extensions.swift in Sources */,
 				F4404FC327594D2F00DF69EC /* Text.swift in Sources */,
+				F4DDBB23275B16F1009B3182 /* ProfileView.swift in Sources */,
 				F4404FD727595E9600DF69EC /* ApplicationDetailViewController.swift in Sources */,
 				F4404FCF2759562100DF69EC /* Assembly.swift in Sources */,
+				F4DDBB26275B1DF8009B3182 /* ProfileAssembly.swift in Sources */,
 				F4404FC727594D8000DF69EC /* UIView+Extensions.swift in Sources */,
 				F4404FA4275949A600DF69EC /* ApplicationsListViewController.swift in Sources */,
+				F4CA3158275A965A00AAF868 /* ApplicationListRouter.swift in Sources */,
 				F4404FD12759584500DF69EC /* DependencyProvider.swift in Sources */,
 				F49AAB7C275A11140005F9F0 /* ReviewView.swift in Sources */,
+				F4DDBB1D275B13A4009B3182 /* MainButton.swift in Sources */,
+				F4CA315D275A97ED00AAF868 /* ApplicationsFilterViewController.swift in Sources */,
 				F4404FCD275955D500DF69EC /* ApplicationsListAssembly.swift in Sources */,
 				F4404FD527595D4D00DF69EC /* ApplicationDetailAssembly.swift in Sources */,
 			);
